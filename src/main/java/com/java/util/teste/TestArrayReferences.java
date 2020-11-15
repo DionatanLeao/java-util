@@ -1,14 +1,15 @@
 package com.java.util.teste;
 
 import com.java.util.entity.Cliente;
+import com.java.util.entity.Conta;
 import com.java.util.entity.ContaCorrente;
 import com.java.util.entity.ContaPoupanca;
+import com.java.util.entity.GuardadorContas;
 
 public class TestArrayReferences {
 
 	public static void main(String[] args) {
 
-		// int[] idades = new int[5];
 		Object[] referencias = new Object[5];
 
 		ContaCorrente cc1 = new ContaCorrente(22, 11);
@@ -20,15 +21,26 @@ public class TestArrayReferences {
 		Cliente cliente = new Cliente();
 		referencias[2] = cliente;
 
-		// System.out.println(cc2.getNumero());
+		System.out.println(cc2.getNumero());
 
-//			Object referenciaGenerica = contas[1];
-//			
-//			System.out.println( referenciaGenerica.getNumero()  );
+		Object referenciaGenerica = referencias[1];
+			
+		//System.out.println( referenciaGenerica.getNumero()  );
 
 		ContaPoupanca ref = (ContaPoupanca) referencias[1];// type cast
 		System.out.println(cc2.getNumero());
 		System.out.println(ref.getNumero());
+		
+		GuardadorContas guardador = new GuardadorContas();
+		
+		Conta cc =  new ContaCorrente(22, 11);
+		guardador.adiciona(cc);
+		
+		int tamanho = guardador.getQtdElementos();
+		System.out.println(tamanho);
+		
+		Conta ref1 = guardador.getReferencia(0);
+		System.out.println(ref1.getContaCorrente().getNumero());
 
 	}
 
