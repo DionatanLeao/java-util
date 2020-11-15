@@ -1,11 +1,11 @@
 package com.java.util.entity;
 
-public class ContaCorrente {
+public class ContaPoupanca {
 
 	private Integer agencia;
 	private Integer numero;
 
-	public ContaCorrente(Integer agencia, Integer numero) {
+	public ContaPoupanca(Integer agencia, Integer numero) {
 		this.agencia = agencia;
 		this.numero = numero;
 	}

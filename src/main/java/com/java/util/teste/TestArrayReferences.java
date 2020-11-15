@@ -1,21 +1,35 @@
 package com.java.util.teste;
 
+import com.java.util.entity.Cliente;
 import com.java.util.entity.ContaCorrente;
+import com.java.util.entity.ContaPoupanca;
 
 public class TestArrayReferences {
 
-	    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	        ContaCorrente[] contas = new ContaCorrente[5];
+		// int[] idades = new int[5];
+		Object[] referencias = new Object[5];
 
-	        ContaCorrente cc1 = new ContaCorrente(22, 11);
-	        ContaCorrente cc2 = new ContaCorrente(22, 22);
+		ContaCorrente cc1 = new ContaCorrente(22, 11);
+		referencias[0] = cc1;
 
-	        contas[0] = cc1;
-	        contas[1] = cc2;
+		ContaPoupanca cc2 = new ContaPoupanca(22, 22);
+		referencias[1] = cc2;
 
-	        System.out.println(contas[0].getNumero());
+		Cliente cliente = new Cliente();
+		referencias[2] = cliente;
 
-	    }
+		// System.out.println(cc2.getNumero());
+
+//			Object referenciaGenerica = contas[1];
+//			
+//			System.out.println( referenciaGenerica.getNumero()  );
+
+		ContaPoupanca ref = (ContaPoupanca) referencias[1];// type cast
+		System.out.println(cc2.getNumero());
+		System.out.println(ref.getNumero());
+
+	}
 
 }
