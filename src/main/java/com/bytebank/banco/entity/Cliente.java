@@ -1,4 +1,4 @@
-package com.java.util.entity;
+package com.bytebank.banco.entity;
 
 public class Cliente {
 
@@ -29,4 +29,5 @@ public class Cliente {
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
 	}
+
 }

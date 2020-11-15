@@ -1,11 +1,11 @@
-package com.java.util.entity;
+package com.bytebank.banco.entity;
 
-public class GuardadorContas {
+public class GuardadorDeContas {
 
 	private Conta[] referencias;
 	private int posicaoLivre;
 
-	public GuardadorContas() {
+	public GuardadorDeContas() {
 		this.referencias = new Conta[10];
 		this.posicaoLivre = 0;
 	}
@@ -15,11 +15,11 @@ public class GuardadorContas {
 		this.posicaoLivre++;
 	}
 
-	public int getQtdElementos() {
+	public int getQuantidadeDeElementos() {
 		return this.posicaoLivre;
 	}
 
-	public Conta getReferencia(int posicao) {
-		return this.referencias[posicao];
+	public Conta getReferencia(int pos) {
+		return this.referencias[pos];
 	}
 }
