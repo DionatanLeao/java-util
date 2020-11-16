@@ -7,10 +7,8 @@ public class TesteOutrosWrappers {
 
 	public static void main(String[] args) {
 		
-		
 		Integer idadeRef = Integer.valueOf(29); //autoboxing
 		System.out.println(idadeRef.intValue()); // unboxing
-		
 		
 		Double dRef = Double.valueOf(3.2); //autoboxing
 		System.out.println(dRef.doubleValue()); //unboxing
@@ -18,7 +16,7 @@ public class TesteOutrosWrappers {
 		Boolean bRef = Boolean.FALSE;
 		System.out.println(bRef.booleanValue());
 		
-		//Number refNumero = Float.valueOf(29.9f);
+		Number refNumero = Float.valueOf(29.9f);
 		
 		List<Number> lista = new ArrayList<>();
 		lista.add(10);
