@@ -1,8 +1,8 @@
-package com.bytebank.banco.test;
+package br.com.bytebank.banco.test;
 
-import com.bytebank.banco.entity.Conta;
-import com.bytebank.banco.entity.ContaCorrente;
-import com.bytebank.banco.entity.GuardadorDeContas;
+import br.com.bytebank.banco.modelo.Conta;
+import br.com.bytebank.banco.modelo.ContaCorrente;
+import br.com.bytebank.banco.modelo.GuardadorDeContas;
 
 public class TesteGuardadorContas {
 

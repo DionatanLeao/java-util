@@ -1,4 +1,4 @@
-package com.bytebank.banco.entity;
+package br.com.bytebank.banco.modelo;
 
 public class SeguroDeVida implements Tributavel {
 
