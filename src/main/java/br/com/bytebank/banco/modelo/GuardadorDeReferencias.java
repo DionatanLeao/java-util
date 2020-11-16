@@ -27,6 +27,7 @@ public class GuardadorDeReferencias implements Iterable<Object> {
 
 	@Override
 	public Iterator<Object> iterator() {
+		// TODO Auto-generated method stub
 		return null;
 	}
 	

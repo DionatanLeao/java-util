@@ -1,6 +1,6 @@
 package br.com.bytebank.banco.test.util;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import br.com.bytebank.banco.modelo.Conta;
@@ -10,9 +10,12 @@ public class TesteArrayList {
 
 	public static void main(String[] args) {
 
-		//Generics
-		List<Conta> lista = new LinkedList<Conta>();
-		
+		//Listas
+//		List<Conta> lista = new Vector<Conta>();
+//		List<Conta> lista = new LinkedList<Conta>();
+		List<Conta> lista = new ArrayList<Conta>();
+//		Collection<Conta> lista = new ArrayList<Conta>();
+
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
 		
