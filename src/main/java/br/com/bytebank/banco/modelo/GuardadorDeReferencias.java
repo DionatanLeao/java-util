@@ -2,7 +2,7 @@ package br.com.bytebank.banco.modelo;
 
 import java.util.Iterator;
 
-public class GuardadorDeReferencias implements Iterable<Object> {
+public class GuardadorDeReferencias implements Iterable {
 	
 	private Object[] referencias;
 	private int posicaoLivre;
@@ -26,7 +26,7 @@ public class GuardadorDeReferencias implements Iterable<Object> {
 	}
 
 	@Override
-	public Iterator<Object> iterator() {
+	public Iterator iterator() {
 		// TODO Auto-generated method stub
 		return null;
 	}
